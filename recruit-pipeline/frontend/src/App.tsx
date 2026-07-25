@@ -212,7 +212,7 @@ export default function App() {
 
   return (
     <div style={{ padding: 24, fontFamily: "sans-serif" }}>
-      <h1>Recruit Pipeline</h1>
+      <h1>Cruwo</h1>
       <CreateJobForm onCreated={loadJobs} />
       <hr style={{ margin: "24px 0" }} />
       <ApplicationForm jobs={jobs} onSubmitted={loadApplications} />
