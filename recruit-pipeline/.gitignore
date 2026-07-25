@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+backend/uploads/
+scoring-service/venv/
+scoring-service/__pycache__/
+*.pyc

@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Job {
+  id           Int           @id @default(autoincrement())
+  title        String
+  description  String        @db.Text
+  requirements String        @db.Text // JSON-encoded array of required skills/experience
+  createdAt    DateTime      @default(now())
+  applications Application[]
+}
+
+model Application {
+  id             Int      @id @default(autoincrement())
+  candidateName  String
+  candidateEmail String
+  jobId          Int
+  job            Job      @relation(fields: [jobId], references: [id])
+  cvFilePath     String
+  rawParsedData  String?  @db.Text // JSON from the scoring service
+  score          Float? // match score 0-100
+  scoreReason    String?  @db.Text
+  status         String   @default("received") // received | screened | shortlisted | rejected
+  submittedAt    DateTime @default(now())
+}
