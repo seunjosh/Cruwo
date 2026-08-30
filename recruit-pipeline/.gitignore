@@ -5,3 +5,4 @@ backend/uploads/
 scoring-service/venv/
 scoring-service/__pycache__/
 *.pyc
+scoring-service/.venv/

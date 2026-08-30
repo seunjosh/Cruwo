@@ -1,0 +1,49 @@
+<svg width="680" height="464" viewBox="0 0 680 464" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Cruwo architecture diagram</title>
+<desc>Candidates and HR use a React frontend, which talks to an Express backend backed by a MySQL database. The backend calls a FastAPI scoring service that hosts three Google ADK agents, all powered by Gemini 3.5 Flash.</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5f5e5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="680" height="464" fill="#ffffff"/>
+
+<line x1="340" y1="80" x2="340" y2="110" stroke="#5f5e5a" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="340" y1="166" x2="340" y2="196" stroke="#5f5e5a" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M340 252 L340 267 L160 267 L160 282" fill="none" stroke="#5f5e5a" stroke-width="1" marker-end="url(#arrow)"/>
+<path d="M340 252 L340 267 L460 267 L460 282" fill="none" stroke="#5f5e5a" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="460" y1="338" x2="460" y2="368" stroke="#5f5e5a" stroke-width="1" marker-end="url(#arrow)"/>
+
+<g>
+<rect x="270" y="40" width="140" height="40" rx="8" fill="#F1EFE8" stroke="#5f5e5a" stroke-width="0.5"/>
+<text x="340" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">Candidates &amp; HR</text>
+</g>
+
+<g>
+<rect x="240" y="110" width="200" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#04342C">Frontend</text>
+<text x="340" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#0F6E56">React + Vite UI</text>
+</g>
+
+<g>
+<rect x="230" y="196" width="220" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="340" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#042C53">Backend API</text>
+<text x="340" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#185FA5">Express + Prisma ORM</text>
+</g>
+
+<g>
+<rect x="80" y="282" width="160" height="56" rx="8" fill="#F1EFE8" stroke="#5f5e5a" stroke-width="0.5"/>
+<text x="160" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#2C2C2A">Database</text>
+<text x="160" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5f5e5a">MySQL via Prisma</text>
+</g>
+
+<g>
+<rect x="340" y="282" width="240" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="460" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#26215C">Scoring service</text>
+<text x="460" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#534AB7">FastAPI + Google ADK</text>
+</g>
+
+<g>
+<rect x="340" y="368" width="240" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="460" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="#4A1B0C">Gemini 3.5 Flash</text>
+<text x="460" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#993C1D">3 specialized agents</text>
+</g>
+</svg>
