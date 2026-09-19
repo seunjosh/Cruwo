@@ -68,7 +68,7 @@ recruit-pipeline/
 - Node.js 18+
 - Python 3.11
 - Docker Desktop
-- A Gemini API key ([aistudio.google.com/apikey](https://aistudio.google.com/apikey))
+- A Gemini API key 
 
 ### 1. Clone and install
 
